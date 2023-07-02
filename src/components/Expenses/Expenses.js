@@ -6,7 +6,7 @@ import ExpensesFilter from "./ExpensesFilter";
 
 const Expenses = (props) => {
   let [enteredFilter, setEnteredFilter] = useState("Select");
-  console.log(enteredFilter);
+  // console.log(enteredFilter);
   const filterHandler = (year) => {
     setEnteredFilter(year);
   };
@@ -15,9 +15,9 @@ const Expenses = (props) => {
     <div>
       <Card className="expenses">
         <ExpensesFilter onChangeFilter={filterHandler} />
-        <ExpenseItem expense={props.expenses[0]} />
-        <ExpenseItem expense={props.expenses[1]} />
-        <ExpenseItem expense={props.expenses[2]} />
+        {props.expenses.map((item) => (
+          <ExpenseItem expense={item} />
+        ))}
       </Card>
     </div>
   );
