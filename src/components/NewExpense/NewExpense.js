@@ -26,6 +26,7 @@ const NewExpense = (props) => {
       title: enteredTitle,
       price: enteredPrice,
       date: new Date(enteredDate),
+      id: Math.random(),
     };
 
     props.onSaveExpenseData(expenseValues);
