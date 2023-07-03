@@ -5,7 +5,7 @@ import NewExpense from "./components/NewExpense/NewExpense";
 let InitialExpenses = [
   {
     id: Math.random(),
-    date: new Date(2021, 5, 12),
+    date: new Date(2023, 5, 12),
     title: "Title1..",
     price: "Price1..",
   },
