@@ -7,19 +7,19 @@ let InitialExpenses = [
     id: Math.random(),
     date: new Date(2023, 5, 12),
     title: "Title1..",
-    price: "Price1..",
+    price: 5,
   },
   {
     id: Math.random(),
     date: new Date(2022, 5, 12),
     title: "Title2..",
-    price: "Price2..",
+    price: 15,
   },
   {
     id: Math.random(),
     date: new Date(2023, 5, 12),
     title: "Title3..",
-    price: "Price3..",
+    price: 30,
   },
 ];
 

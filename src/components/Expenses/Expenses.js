@@ -3,6 +3,7 @@ import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
+import Chart from "../Chart/Chart";
 
 const Expenses = (props) => {
   let [enteredFilter, setEnteredFilter] = useState("Select");
@@ -20,6 +21,7 @@ const Expenses = (props) => {
     <div>
       <Card className="expenses">
         <ExpensesFilter onChangeFilter={filterHandler} />
+        <Chart expenses={filteredExpensesList} />
         {filteredExpensesList.length === 0 && (
           <p className="expenses-list__fallback">No expenses found.</p>
         )}
